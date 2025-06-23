@@ -2,18 +2,29 @@ project:
   type: website
 
 website:
-  title: "dimred"
+  title: Dim Red
+  search: false
   navbar:
+    pinned: false
+    collapse: false
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "home"
+        href: index.qmd
+  page-footer:
+    background: light # or `dark`
+    left: Copyleft 2025, Nishant Aswani
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    theme: 
+      - default
+      - styles/_variables.scss
+      - styles/_navbar.scss
+    toc: true    
+    anchor-sections: false
+    self-contained: true
+    date-format: long
+
 
 
 

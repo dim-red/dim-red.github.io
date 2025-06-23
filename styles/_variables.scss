@@ -1,0 +1,13 @@
+/*-- scss:defaults --*/
+// "Dim Red" color palette
+$dim-red: #8b2635;
+$dim-red-light: #a53344;
+$warm-black: #1a1817;
+$warm-gray: #6b6866;
+$cool-gray: #f8f7f6;
+
+// Core overrides
+$font-family-sans-serif: "IBM Plex Sans", system-ui, sans-serif;
+$font-family-monospace: "IBM Plex Mono", monospace;
+$body-color: $warm-black;
+$link-color: $dim-red;
