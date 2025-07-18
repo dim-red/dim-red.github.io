@@ -2,18 +2,26 @@ project:
   type: website
 
 website:
-  title: "dimred"
+  title: "DimRed"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    logo-href: index.qmd
+    pinned: true
+    search: false
+    collapse: true
+    collapse-below: md
+    toggle-position: right
+    right:
+      - href: blog.qmd
+        text: Blog
+      - text: Contribute
+        menu:
+        - text: Source Code
+          href:  https://nishantaswani.com
+        - text: Report a Bug
+          href:  https://nishantaswani.com
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+    theme:
+      - cosmo
+      - styles/styles.scss

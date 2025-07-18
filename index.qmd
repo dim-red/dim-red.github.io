@@ -1,7 +1,7 @@
 ---
-title: "dimred"
+format:
+  html:
+    page-layout: full
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<div style="text-align: center; color: #6d0b09; font-size: 2rem;">Under Construction.</div>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*-- scss:defaults --*/
+// Color palette
+$dimred: #6d0b09 !default;
+$dimred-dark: darken($dimred, 10%) !default;
+$dimred-light: lighten($dimred, 10%) !default;
+$slate: #2D3142 !default;
+$light-gray: #F3F3F3 !default;
+$off-white: #FAFAFA !default;
+$accent-blue: #3D5A80 !default;
+
+// Theme settings
+$navbar-bg: $off-white !default;
+$navbar-fg: $slate !default;
+$navbar-hl: $slate !default;
+$font-family-sans-serif: 'Work Sans';
+
+/*-- scss:rules --*/
+// Navbar with zed.dev-like scaling
+.navbar {
+  position: relative;
+
+  /* &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-left: 0.0625rem solid rgba(0,0,0,0.1);
+    border-right: 0.0625rem solid rgba(0,0,0,0.1);
+    margin: 0 1rem;
+    pointer-events: none;
+
+    @media (min-width: 48rem) { margin: 0 2rem; }
+    @media (min-width: 62rem) { margin: 0 3rem; }
+  } */
+
+  .container-fluid {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+}
+
+// Brand with dim red square
+.navbar-brand {
+  font-weight: 500;
+  padding-left: 2.2rem;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: $dimred;
+  }
+}
