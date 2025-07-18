@@ -1,0 +1,10 @@
+---
+title: "Koopman Autoencoders"
+aliases:
+  - page.html
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0; URL=https://nishantaswani.com/articles/papers/kae">
+---

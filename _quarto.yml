@@ -2,29 +2,26 @@ project:
   type: website
 
 website:
-  title: Dim Red
-  search: false
+  title: "DimRed"
   navbar:
-    pinned: false
-    collapse: false
-    left:
-      - text: "home"
-        href: index.qmd
-  page-footer:
-    background: light # or `dark`
-    left: Copyleft 2025, Nishant Aswani
+    logo-href: index.qmd
+    pinned: true
+    search: false
+    collapse: true
+    collapse-below: md
+    toggle-position: right
+    right:
+      - href: blog.qmd
+        text: Blog
+      - text: Contribute
+        menu:
+        - text: Source Code
+          href:  https://nishantaswani.com
+        - text: Report a Bug
+          href:  https://nishantaswani.com
 
 format:
   html:
-    theme: 
-      - default
-      - styles/_variables.scss
-      - styles/_navbar.scss
-    toc: true    
-    anchor-sections: false
-    self-contained: true
-    date-format: long
-
-
-
-
+    theme:
+      - cosmo
+      - styles/styles.scss
